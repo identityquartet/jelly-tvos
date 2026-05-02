@@ -39,8 +39,8 @@ struct PlayerView: View {
 
             if let ticks = item.userData?.playbackPositionTicks, ticks > 0 {
                 let seconds = Double(ticks) / 10_000_000
-                avPlayer.seek(to: CMTime(seconds: seconds, preferredTimescale: 600),
-                              toleranceBefore: .zero, toleranceAfter: .zero)
+                await avPlayer.seek(to: CMTime(seconds: seconds, preferredTimescale: 600),
+                                    toleranceBefore: .zero, toleranceAfter: .zero)
             }
 
             player = avPlayer

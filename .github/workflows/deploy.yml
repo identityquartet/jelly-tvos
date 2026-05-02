@@ -44,13 +44,13 @@ jobs:
 
       - name: Install provisioning profile
         env:
-          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+          PROVISIONING_PROFILE_B64: ${{ secrets.PROVISIONING_PROFILE_B64 }}
           PROFILE_UUID: ${{ secrets.PROFILE_UUID }}
         run: |
-          mkdir -p ~/private_keys
-          echo "$ASC_PRIVATE_KEY" > ~/private_keys/AuthKey_9AHH974Y96.p8
-          python3 -m pip install PyJWT cryptography requests --quiet --break-system-packages
-          python3 .github/scripts/install_profile.py
+          PROFILE_DIR="$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$PROFILE_DIR"
+          echo "$PROVISIONING_PROFILE_B64" | base64 --decode > "$PROFILE_DIR/$PROFILE_UUID.mobileprovision"
+          echo "Installed profile: $PROFILE_DIR/$PROFILE_UUID.mobileprovision"
 
       - name: Archive
         run: |
@@ -69,6 +69,8 @@ jobs:
           ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
           PROFILE_UUID: ${{ secrets.PROFILE_UUID }}
         run: |
+          mkdir -p ~/private_keys
+          echo "$ASC_PRIVATE_KEY" > ~/private_keys/AuthKey_9AHH974Y96.p8
           cat > /tmp/ExportOptions.plist << PLIST
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

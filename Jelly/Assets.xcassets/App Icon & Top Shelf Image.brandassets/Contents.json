@@ -11,6 +11,11 @@
       "role": "primary-app-icon-large"
     },
     {
+      "filename": "App Store Icon.imagestack",
+      "idiom": "tv",
+      "role": "app-store-icon"
+    },
+    {
       "filename": "Top Shelf Image.imageset",
       "idiom": "tv",
       "role": "top-shelf-image"

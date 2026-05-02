@@ -18,12 +18,14 @@
     <key>CFBundleIcons</key>
     <dict>
         <key>CFBundlePrimaryIcon</key>
-        <string>App Icon &amp; Top Shelf Image</string>
+        <string>App Icon</string>
     </dict>
     <key>TVTopShelfImage</key>
     <dict>
+        <key>TVTopShelfPrimaryImage</key>
+        <string>Top Shelf Image</string>
         <key>TVTopShelfPrimaryImageWide</key>
-        <string>App Icon &amp; Top Shelf Image</string>
+        <string>Top Shelf Image Wide</string>
     </dict>
 </dict>
 </plist>

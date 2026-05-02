@@ -49,7 +49,7 @@ jobs:
         run: |
           mkdir -p ~/private_keys
           echo "$ASC_PRIVATE_KEY" > ~/private_keys/AuthKey_9AHH974Y96.p8
-          pip install PyJWT cryptography requests --quiet
+          python3 -m pip install PyJWT cryptography requests --quiet
           python3 .github/scripts/install_profile.py
 
       - name: Archive

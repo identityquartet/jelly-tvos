@@ -1,0 +1,67 @@
+name: Deploy to TestFlight
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          XCODE=$(ls /Applications | grep "^Xcode_16" | sort -V | tail -1)
+          if [ -n "$XCODE" ]; then
+            sudo xcode-select -s "/Applications/$XCODE/Contents/Developer"
+          fi
+          xcodebuild -version
+
+      - name: Write API key
+        env:
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/private_keys
+          echo "$ASC_PRIVATE_KEY" > ~/private_keys/AuthKey_9AHH974Y96.p8
+
+      - name: Archive
+        run: |
+          xcodebuild archive \
+            -project Jelly.xcodeproj \
+            -scheme Jelly \
+            -destination "generic/platform=tvOS" \
+            -archivePath "$RUNNER_TEMP/Jelly.xcarchive" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath ~/private_keys/AuthKey_9AHH974Y96.p8 \
+            -authenticationKeyID 9AHH974Y96 \
+            -authenticationKeyIssuerID 69a6de87-5a54-47e3-e053-5b8c7c11a4d1 \
+            CODE_SIGN_STYLE=Automatic \
+            DEVELOPMENT_TEAM=6GQ6BYE2DM
+
+      - name: Export and upload to TestFlight
+        run: |
+          cat > /tmp/ExportOptions.plist << 'PLIST'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>method</key><string>app-store</string>
+              <key>teamID</key><string>6GQ6BYE2DM</string>
+              <key>destination</key><string>upload</string>
+              <key>uploadSymbols</key><true/>
+              <key>stripSwiftSymbols</key><true/>
+          </dict>
+          </plist>
+          PLIST
+
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/Jelly.xcarchive" \
+            -exportOptionsPlist /tmp/ExportOptions.plist \
+            -exportPath "$RUNNER_TEMP/export" \
+            -authenticationKeyPath ~/private_keys/AuthKey_9AHH974Y96.p8 \
+            -authenticationKeyID 9AHH974Y96 \
+            -authenticationKeyIssuerID 69a6de87-5a54-47e3-e053-5b8c7c11a4d1 \
+            -allowProvisioningUpdates

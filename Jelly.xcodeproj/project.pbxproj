@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD200000000000000000001 /* JellyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000001 /* JellyApp.swift */; };
+		DD200000000000000000002 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000002 /* Extensions.swift */; };
+		DD200000000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000003 /* Models.swift */; };
+		DD200000000000000000004 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000004 /* KeychainManager.swift */; };
+		DD200000000000000000005 /* JellyfinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000005 /* JellyfinAPI.swift */; };
+		DD200000000000000000006 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000006 /* RootView.swift */; };
+		DD200000000000000000007 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000007 /* LoginView.swift */; };
+		DD200000000000000000008 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000008 /* MainTabView.swift */; };
+		DD200000000000000000009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000009 /* HomeView.swift */; };
+		DD20000000000000000000A /* MediaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10000000000000000000A /* MediaRow.swift */; };
+		DD20000000000000000000B /* PosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10000000000000000000B /* PosterCard.swift */; };
+		DD20000000000000000000C /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10000000000000000000C /* MoviesView.swift */; };
+		DD20000000000000000000D /* TVShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10000000000000000000D /* TVShowsView.swift */; };
+		DD20000000000000000000E /* TVShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10000000000000000000E /* TVShowDetailView.swift */; };
+		DD20000000000000000000F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10000000000000000000F /* PlayerView.swift */; };
+		DD200000000000000000010 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000010 /* SettingsView.swift */; };
+		DD200000000000000000011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD100000000000000000011 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD000000000000000000001 /* Jelly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jelly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD100000000000000000001 /* JellyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyApp.swift; sourceTree = "<group>"; };
+		DD100000000000000000002 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DD100000000000000000003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DD100000000000000000004 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		DD100000000000000000005 /* JellyfinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfinAPI.swift; sourceTree = "<group>"; };
+		DD100000000000000000006 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		DD100000000000000000007 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DD100000000000000000008 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		DD100000000000000000009 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DD10000000000000000000A /* MediaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRow.swift; sourceTree = "<group>"; };
+		DD10000000000000000000B /* PosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCard.swift; sourceTree = "<group>"; };
+		DD10000000000000000000C /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		DD10000000000000000000D /* TVShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsView.swift; sourceTree = "<group>"; };
+		DD10000000000000000000E /* TVShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailView.swift; sourceTree = "<group>"; };
+		DD10000000000000000000F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		DD100000000000000000010 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DD100000000000000000011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD100000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD400000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD300000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				DD300000000000000000002 /* Jelly */,
+				DD300000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD300000000000000000002 /* Jelly */ = {
+			isa = PBXGroup;
+			children = (
+				DD100000000000000000001 /* JellyApp.swift */,
+				DD100000000000000000002 /* Extensions.swift */,
+				DD100000000000000000003 /* Models.swift */,
+				DD100000000000000000004 /* KeychainManager.swift */,
+				DD100000000000000000005 /* JellyfinAPI.swift */,
+				DD100000000000000000006 /* RootView.swift */,
+				DD100000000000000000007 /* LoginView.swift */,
+				DD100000000000000000008 /* MainTabView.swift */,
+				DD100000000000000000009 /* HomeView.swift */,
+				DD10000000000000000000A /* MediaRow.swift */,
+				DD10000000000000000000B /* PosterCard.swift */,
+				DD10000000000000000000C /* MoviesView.swift */,
+				DD10000000000000000000D /* TVShowsView.swift */,
+				DD10000000000000000000E /* TVShowDetailView.swift */,
+				DD10000000000000000000F /* PlayerView.swift */,
+				DD100000000000000000010 /* SettingsView.swift */,
+				DD100000000000000000011 /* Assets.xcassets */,
+				DD100000000000000000012 /* Info.plist */,
+			);
+			path = Jelly;
+			sourceTree = "<group>";
+		};
+		DD300000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD000000000000000000001 /* Jelly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD500000000000000000001 /* Jelly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD800000000000000000002 /* Build configuration list for PBXNativeTarget "Jelly" */;
+			buildPhases = (
+				DD400000000000000000001 /* Sources */,
+				DD400000000000000000002 /* Frameworks */,
+				DD400000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jelly;
+			productName = Jelly;
+			productReference = DD000000000000000000001 /* Jelly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD600000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					DD500000000000000000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = DD800000000000000000001 /* Build configuration list for PBXProject "Jelly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD300000000000000000001;
+			productRefGroup = DD300000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD500000000000000000001 /* Jelly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD400000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD200000000000000000011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD400000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD200000000000000000001 /* JellyApp.swift in Sources */,
+				DD200000000000000000002 /* Extensions.swift in Sources */,
+				DD200000000000000000003 /* Models.swift in Sources */,
+				DD200000000000000000004 /* KeychainManager.swift in Sources */,
+				DD200000000000000000005 /* JellyfinAPI.swift in Sources */,
+				DD200000000000000000006 /* RootView.swift in Sources */,
+				DD200000000000000000007 /* LoginView.swift in Sources */,
+				DD200000000000000000008 /* MainTabView.swift in Sources */,
+				DD200000000000000000009 /* HomeView.swift in Sources */,
+				DD20000000000000000000A /* MediaRow.swift in Sources */,
+				DD20000000000000000000B /* PosterCard.swift in Sources */,
+				DD20000000000000000000C /* MoviesView.swift in Sources */,
+				DD20000000000000000000D /* TVShowsView.swift in Sources */,
+				DD20000000000000000000E /* TVShowDetailView.swift in Sources */,
+				DD20000000000000000000F /* PlayerView.swift in Sources */,
+				DD200000000000000000010 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DD700000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		DD700000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD700000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6GQ6BYE2DM;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Jelly/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stacknest.jelly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "3";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		DD700000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6GQ6BYE2DM;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Jelly/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stacknest.jelly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "3";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD800000000000000000001 /* Build configuration list for PBXProject "Jelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD700000000000000000001 /* Debug */,
+				DD700000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD800000000000000000002 /* Build configuration list for PBXNativeTarget "Jelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD700000000000000000003 /* Debug */,
+				DD700000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = DD600000000000000000001 /* Project object */;
+}

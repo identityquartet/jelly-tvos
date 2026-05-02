@@ -15,5 +15,15 @@
         <key>NSAllowsArbitraryLoads</key><true/>
     </dict>
     <key>UIUserInterfaceStyle</key><string>Dark</string>
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <string>App Icon &amp; Top Shelf Image</string>
+    </dict>
+    <key>TVTopShelfImage</key>
+    <dict>
+        <key>TVTopShelfPrimaryImageWide</key>
+        <string>App Icon &amp; Top Shelf Image</string>
+    </dict>
 </dict>
 </plist>
